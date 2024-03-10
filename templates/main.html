@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nectar Lifesciences Ltd. </title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+	  <h1><center>Electrical Power Consumption </h1>
+    {% if result %} 
+        <h1><center> </h1>
+    {% endif %}
+
+    <form action ="" method = "POST">
+
+      {% csrf_token %}
+      <center class="PG">
+        <input type ="floatformat" name="Turbine_Generator" placeholder="Enter the TG " required ><br> <br>
+        <input type ="floatformat" name="" placeholder=" " required ><br> <br>
+      <input type="submit">
+    </form >
+
+  </body>
+</html>
